@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="first-div">
+		<h2>You can use these to get Temperature in any form</h2>
+	</div>
+		<!-- temperature convertor -->
+		<div class="container2">
+			<h2>Temperature</h2>
+            <form class="sub-form1" oninput="far1.value=(cel1.value*9/5) + 32">
+				<div>
+					<label for="cel1">Celsius</label>
+					<br>
+					<input type="text" id="cel1">
+				</div>
+				<div>
+					<center><strong>=</strong></center>
+				</div>
+				 <div>
+					<label for="far1">Fahrenheit</label>
+					<br>
+					<input type="text" id="far1" readonly>
+				 </div>
+			</form>
+			<br>
+			<form class="sub-form1" oninput="kel.value=parseFloat(cel1.value + 273.15)">
+				<div>
+					<label for="cel1">Celsius</label>
+					<br>
+					<input type="text" id="cel1">
+				</div>
+				<div>
+					<center><strong>=</strong></center>
+				</div>
+				 <div>
+					<label for="kel">Kelvin</label>
+					<br>
+					<input type="text" id="kel" readonly>
+				 </div>
+			</form>
+			<br>
+			<form class="sub-form1" oninput="cel.value=(far.value - 32)*5/9">
+				<div>
+					<label for="far">Fahrenheit</label>
+					<br>
+					<input type="text" id="far">
+				</div>
+				<div>
+					<center><strong>=</strong></center>
+				</div>
+				 <div>
+					<label for="cel">Celsius</label>
+					<br>
+					<input type="text" id="cel" readonly>
+				 </div>
+			</form>
+			<br>
+			<form class="sub-form1" oninput="kel1.value=(far2.value - 32) * 5/9 + 273.15">
+				<div>
+					<label for="far2">Fahrenheit</label>
+					<br>
+					<input type="text" id="far2">
+				</div>
+				<div>
+					<center><strong>=</strong></center>
+				</div>
+				 <div>
+					<label for="kel1">Kelvin</label>
+					<br>
+					<input type="text" id="kel1" readonly>
+				 </div>
+			</form>
+			<br>
+			<form class="sub-form1" oninput="far3.value=(kel2.value - 273.15)*9/5 + 32">
+				<div>
+					<label for="kel2">Kelvin</label>
+					<br>
+					<input type="text" id="kel2">
+				</div>
+				<div>
+					<center><strong>=</strong></center>
+				</div>
+				 <div>
+					<label for="far3">Fahrenheit</label>
+					<br>
+					<input type="text" id="far3" readonly>
+				 </div>
+			</form>
+		</div>	
+	
+</body>
+</html>
